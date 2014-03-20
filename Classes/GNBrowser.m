@@ -17,7 +17,8 @@ NSString *const DefaultBrowserIdentifier = @"default";
         @[@"Default", DefaultBrowserIdentifier],
         @[@"Safari", @"com.apple.Safari"],
         @[@"Google Chrome", @"com.google.Chrome"],
-        @[@"Firefox", @"org.mozilla.firefox"]
+        @[@"Firefox", @"org.mozilla.firefox"],
+        @[@"Command", @""]
     ];
 }
 

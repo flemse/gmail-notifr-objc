@@ -100,7 +100,9 @@
 - (void)openInbox:(id)sender {
     NSString *guid = [[sender title] isEqualToString:NSLocalizedString(@"Open Inbox", nil)] ? [[sender menu] title] : [[sender submenu] title];
     [self openInboxForAccount:[self accountForGuid:guid]];
-
+    
+    NSLog(@"guid to open: %@", guid);
+    
     // Check this account a short while after opening its inbox, so we don't have to check it
     // again manually just to clear the inbox count, since any unread mail is probably read now.
     // This can only be activated by a hidden default.
